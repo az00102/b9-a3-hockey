@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey</title>
+    <!-- tailwind & daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#131318",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- google font - manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar section -->
+      <section></section>
+
+      <!-- banner section start -->
+      <section class="container mx-auto my-16">
+        <div class="carousel w-auto">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full h-[32rem] rounded-2xl lg:h-[47rem]"
+          >
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-96 lg:top-[42rem] sm:justify-center sm:left-20 lg:flex lg:justify-between"
+            >
+              <div>
+                <a
+                href="#slide2"
+                class="bg-primary border-none btn btn-circle relative sm:right-12"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15.75 19.5L8.25 12L15.75 4.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#slide2"
+                class="border-none bg-primary btn btn-circle relative"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              </div>
+              <!-- banner-bagde -->
+              <div
+                class="bg-primary hidden max-w-[50rem] h-auto p-8 rounded-2xl lg:flex-col lg:flex lg:justify-end lg:relative lg:-top-[5rem]"
+              >
+                <h3
+                  class="font-manrope text-2xl font-extrabold text-white mb-4"
+                >
+                  Meet all the heroes from the field
+                </h3>
+                <p class="font-manrope font-medium text-[#FFFFFF99]">
+                  Explore the profiles of hockey's finest athletes, delving into
+                  their inspiring stories and remarkable achievements on the
+                  field as we showcase the true heroes of the sport.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="slide2"
+              class="carousel-item relative w-full h-[32rem] rounded-2xl lg:h-[47rem]"
+            >
+              <img src="Images/hockey-en-salle.jpg" class="w-full" />
+              <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-96 lg:top-[42rem] sm:justify-center sm:left-20 lg:flex lg:justify-between"
+            >
+              <div>
+                <a
+                href="#slide1"
+                class="bg-primary border-none btn btn-circle relative sm:right-12"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15.75 19.5L8.25 12L15.75 4.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#slide1"
+                class="border-none bg-primary btn btn-circle relative"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              </div>
+              <!-- banner-bagde -->
+              <div
+                class="bg-primary hidden max-w-[50rem] h-auto p-8 rounded-2xl lg:flex-col lg:flex lg:justify-end lg:relative lg:-top-[5rem]"
+              >
+                <h3
+                  class="font-manrope text-2xl font-extrabold text-white mb-4"
+                >
+                  Meet all the heroes from the field
+                </h3>
+                <p class="font-manrope font-medium text-[#FFFFFF99]">
+                  Explore the profiles of hockey's finest athletes, delving into
+                  their inspiring stories and remarkable achievements on the
+                  field as we showcase the true heroes of the sport.
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner-bagde -->
+        <div
+          class="bg-primary h-auto p-8 rounded-2xl flex flex-col lg:w-[730px] lg:absolute lg:hidden"
+        >
+          <h3 class="font-manrope text-2xl font-extrabold text-white mb-4">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-manrope font-medium text-[#FFFFFF99]">
+            Explore the profiles of hockey's finest athletes, delving into their
+            inspiring stories and remarkable achievements on the field as we
+            showcase the true heroes of the sport.
+          </p>
+        </div>
+      </section>
+      <!-- banner section end -->
+    </header>
+  </body>
+</html>
